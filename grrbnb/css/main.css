@@ -1,10 +1,11 @@
-@import url('some google sans-serif font');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway&display=swap');
 /* make sure to select a new google font and use it for your header */
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Raleway, Arial, sans-serif;
 }
 *::after,
 *::before{
@@ -21,9 +22,8 @@ main{
     border: 1px solid #aaa;
 }
 header{
-    /* Photo by Wyatt Ryan on Unsplash */
-    /* Replace this with an image that you select */
-    background-image: url(../img/wyatt-ryan-367017-unsplash.jpg);
+    /* Photo by Drew Coffman about person on hammock */
+    background-image: url(../img/person-on-hammock.png);
     background-size: 100% auto;
     background-position: center center;
 }
@@ -31,8 +31,8 @@ header h1{
     font-size: 4rem;
     line-height: 4rem;
     padding: 1rem 1rem;
-    color: rgba(250,250,250, 0.7);
-    text-shadow: 2px 2px 4px #835A59;
+    color: rgba(255, 255, 255);
+    text-shadow: 5px 5px 1px #68605a;
     vertical-align: top;
     text-align: right;
     min-height: 12rem;
@@ -51,8 +51,9 @@ form{
 label{
     display: block;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #3F1F24;
+    background-color: #eff0ef;
 }
 input{
     margin:0;
@@ -60,6 +61,8 @@ input{
     padding: 0.2rem 1rem;
     width: 100%;
     color: #835A59;
+    background-color: #a2a4a1;
+    
 }
 input#min.price::after,
 input.price#max::after{
@@ -73,7 +76,7 @@ input.price#max::after{
     font-size: 1rem;
     line-height: 1.5;
     padding: 0.25rem 1rem;
-    background-color:#D16641;
+    background-color:#68605a;
     color: #fff;
 }
 @media all and (min-width:650px){
@@ -121,3 +124,4 @@ input.price#max::after{
         flex-basis: 70%;
     }
 }
+
